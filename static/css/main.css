@@ -146,6 +146,38 @@ body.reader-night-mode .header-wrap #jianshu-header .slogan .slogan-title {
   background-color: #fff;
   border-color: #fff
 }
+.flow-list-sort {
+  margin: 0 -18px;
+  list-style: none;
+  border: 1px solid #f0f0f0;
+  border-right: none;
+  border-left: none;
+}
+.flow-list-sort li {
+  position: relative;
+  display: inline-block;
+  width: 33.333%;
+  margin: -1px 0;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+.flow-list-sort li.active {
+  color: #ea6f5a;
+}
+
+.flow-list-sort li {
+  position: relative;
+  display: inline-block;
+  width: 33.333%;
+  margin: -1px 0;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
 
 body.reader-night-mode #user-show #user-info .avatar {
   background-color: #3f3f3f;
@@ -885,7 +917,7 @@ body.reader-night-mode .user-follow-button.followed, body.reader-night-mode .use
   background-color: #fff
 }
 
-.flow-list-placeholder-load-more[data-v-2c9474d2] {
+.flow-list-placeholder-load-more {
   margin: auto 0;
   padding: 15px 0 15px 7px;
   text-align: center;
@@ -893,28 +925,28 @@ body.reader-night-mode .user-follow-button.followed, body.reader-night-mode .use
   color: #969696
 }
 
-.flow-list-placeholder-load-error[data-v-2c9474d2], .flow-list-placeholder-nothing[data-v-2c9474d2] {
+.flow-list-placeholder-load-error, .flow-list-placeholder-nothing {
   padding: 40px 0;
   font-size: 14px;
   color: #969696;
   text-align: center
 }
 
-.flow-list-placeholder-load-error img[data-v-2c9474d2], .flow-list-placeholder-nothing img[data-v-2c9474d2] {
+.flow-list-placeholder-load-error img, .flow-list-placeholder-nothing img {
   padding-bottom: 10px;
   width: 140px
 }
 
-.flow-list-placeholder-load-error img[data-v-2c9474d2] {
+.flow-list-placeholder-load-error img {
   height: 140px
 }
 
-.notes-placeholder[data-v-2c9474d2] {
+.notes-placeholder {
   position: relative;
   margin: 25px 0
 }
 
-.notes-placeholder .img[data-v-2c9474d2] {
+.notes-placeholder .img {
   float: right;
   width: 80px;
   height: 80px;
@@ -922,11 +954,11 @@ body.reader-night-mode .user-follow-button.followed, body.reader-night-mode .use
   background-color: #eaeaea
 }
 
-.notes-placeholder .author[data-v-2c9474d2] {
+.notes-placeholder .author {
   margin-bottom: 10px
 }
 
-.notes-placeholder .avatar[data-v-2c9474d2] {
+.notes-placeholder .avatar {
   width: 22px;
   height: 22px;
   margin-right: 5px;
@@ -936,7 +968,7 @@ body.reader-night-mode .user-follow-button.followed, body.reader-night-mode .use
   vertical-align: middle
 }
 
-.notes-placeholder .name[data-v-2c9474d2] {
+.notes-placeholder .name {
   display: inline-block;
   vertical-align: middle;
   width: 60px;
@@ -944,14 +976,14 @@ body.reader-night-mode .user-follow-button.followed, body.reader-night-mode .use
   background-color: #eaeaea
 }
 
-.notes-placeholder .title[data-v-2c9474d2] {
+.notes-placeholder .title {
   margin: 10px 0 12px;
   width: 160px;
   height: 18px;
   background-color: #eaeaea
 }
 
-.notes-placeholder .text[data-v-2c9474d2] {
+.notes-placeholder .text {
   width: 90%;
   height: 13px;
   margin-bottom: 7px;
@@ -960,42 +992,42 @@ body.reader-night-mode .user-follow-button.followed, body.reader-night-mode .use
   animation: loading 1s ease-in-out infinite
 }
 
-.notes-placeholder .animation-delay[data-v-2c9474d2] {
+.notes-placeholder .animation-delay {
   -webkit-animation: loading 1s ease-in-out -.5s infinite;
   animation: loading 1s ease-in-out -.5s infinite
 }
 
-.notes-placeholder .short-text[data-v-2c9474d2] {
+.notes-placeholder .short-text {
   width: 40%;
   -webkit-animation: shortLoading 1s ease-in-out infinite;
   animation: shortLoading 1s ease-in-out infinite
 }
 
-.notes-placeholder .meta[data-v-2c9474d2] {
+.notes-placeholder .meta {
   margin-top: 10px;
   color: #eaeaea
 }
 
-.notes-placeholder .meta div[data-v-2c9474d2] {
+.notes-placeholder .meta div {
   display: inline-block;
   vertical-align: middle;
   background-color: #eaeaea
 }
 
-.notes-placeholder .meta .read[data-v-2c9474d2] {
+.notes-placeholder .meta .read {
   margin-right: 10px;
   height: 14px;
   width: 40px
 }
 
-.notes-placeholder .meta .collection-tag[data-v-2c9474d2] {
+.notes-placeholder .meta .collection-tag {
   margin-right: 12px;
   width: 52px;
   height: 23px;
   border-radius: 4px
 }
 
-.reader-night-mode .notes-placeholder .author .name[data-v-2c9474d2], .reader-night-mode .notes-placeholder .avatar[data-v-2c9474d2], .reader-night-mode .notes-placeholder .img[data-v-2c9474d2], .reader-night-mode .notes-placeholder .meta div[data-v-2c9474d2], .reader-night-mode .notes-placeholder .text[data-v-2c9474d2], .reader-night-mode .notes-placeholder .title[data-v-2c9474d2] {
+.reader-night-mode .notes-placeholder .author .name, .reader-night-mode .notes-placeholder .avatar, .reader-night-mode .notes-placeholder .img, .reader-night-mode .notes-placeholder .meta div, .reader-night-mode .notes-placeholder .text, .reader-night-mode .notes-placeholder .title {
   background-color: #545454
 }
 
