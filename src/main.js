@@ -4,6 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import Button from 'mint-ui/lib/button';
+import 'mint-ui/lib/button/style.css';
+Vue.component(Button.name, Button);
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
