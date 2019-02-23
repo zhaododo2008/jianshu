@@ -4,9 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import Button from 'mint-ui/lib/button';
-import 'mint-ui/lib/button/style.css';
-Vue.component(Button.name, Button);
+// import Button from 'mint-ui/lib/button';
+// import 'mint-ui/lib/button/style.css';
+// Vue.component(Button.name, Button);
+
+import { Swipe, SwipeItem } from 'mint-ui';   //按需引入部分组件
+Vue.component(Swipe.name, Swipe);
+Vue.component(SwipeItem.name, SwipeItem);
 
 Vue.config.productionTip = false
 
