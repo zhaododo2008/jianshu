@@ -56,13 +56,11 @@
         <ul class="flow-list-sort">
           <li class="active">
             最新发布
-          </li>
-          <li>
-            最新评论
-          </li>
-          <li>
-            热门
-          </li>
+          </li><li class="">
+          最新评论
+          </li><li class="">
+          热门
+        </li>
         </ul>
         <div class="flow-list-container">
           <div class="split-line"></div>
