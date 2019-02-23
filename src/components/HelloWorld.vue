@@ -16,7 +16,7 @@
       <div id="user-show" class="main-view">
         <div id="user-info">
           <div class="background"><img
-            src="http://cdn2.jianshu.io/asimov/src/assets/image/img-user-background-image-default.a89eb3a3.jpg"></div>
+            src="../../static/img/img-user-background-image-default.jpg"></div>
           <div class="avatar">
             <img src="https://upload.jianshu.io/users/upload_avatars/6126137/e83c6b36-be36-4308-8ff4-41c32fc26705?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180">
           </div>

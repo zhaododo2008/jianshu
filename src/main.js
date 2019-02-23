@@ -7,6 +7,8 @@ import router from './router'
 // import Button from 'mint-ui/lib/button';
 // import 'mint-ui/lib/button/style.css';
 // Vue.component(Button.name, Button);
+import Mint from 'mint-ui'
+Vue.use(Mint)
 
 import { Swipe, SwipeItem } from 'mint-ui';   //按需引入部分组件
 Vue.component(Swipe.name, Swipe);
