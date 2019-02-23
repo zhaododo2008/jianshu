@@ -16,7 +16,7 @@
       <div id="user-show" class="main-view">
         <div id="user-info">
           <div class="background"><img
-            src="//cdn2.jianshu.io/asimov/src/assets/image/img-user-background-image-default.a89eb3a3.jpg"></div>
+            src="http://cdn2.jianshu.io/asimov/src/assets/image/img-user-background-image-default.a89eb3a3.jpg"></div>
           <div class="avatar">
             <img src="https://upload.jianshu.io/users/upload_avatars/6126137/e83c6b36-be36-4308-8ff4-41c32fc26705?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180">
           </div>
@@ -31,11 +31,11 @@
             </div>
           </div>
           <a href="http://www.jianshu.com/p/d1d89ed69098" class="badge-icon">
-            <img src="//upload.jianshu.io/user_badge/94d76265-aab1-4559-8d12-1da9f6be21ce" width="20" height="20">
+            <img src="http://upload.jianshu.io/user_badge/94d76265-aab1-4559-8d12-1da9f6be21ce" width="20" height="20">
             观察优秀作者
           </a>
           <a href="http://www.jianshu.com/p/ec82d7d9a7e3" class="badge-icon">
-            <img src="//cdn2.jianshu.io/asimov/src/assets/image/badges/verified_account.b34d8d3f.png" width="20" height="20">
+            <img src="http://cdn2.jianshu.io/asimov/src/assets/image/badges/verified_account.b34d8d3f.png" width="20" height="20">
             认证机构
           </a>
           <div class="intro">
