@@ -124,10 +124,12 @@
       isActive:false,
       icShow:'iconfont ic-show',
       icHide:'iconfont ic-hide',
-      msg: 'Welcome to Your Vue.js App',
       flowList:['最新发布','最新评论','热门'],
-      flowListIndex:0
-
+      flowListIndex:0,
+      currentPage: 1,
+      pageSize: 10,
+      total: 0,
+      data: []
     }
   },
   methods:{
@@ -138,6 +140,22 @@
     selectFlowList(index){
       let me = this;
       me.flowListIndex = index;
+      me.load();
+    },
+    load() {
+      console.log('load message');
+      let me = this;
+      me.$http.ajax({
+        url: '/admin/users',
+        method:'post',
+        param: {},
+        callback: res => {
+          console.log('res is ',res);
+        },
+        error() {
+
+        }
+      });
     }
 
   }
