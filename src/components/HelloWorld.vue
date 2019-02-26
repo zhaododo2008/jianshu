@@ -40,9 +40,9 @@
           </a>
           <div class="intro">
             网易原创栏目《槽值》，微信公众号槽值（id：caozhi163），微博@槽值。情感八卦，槽值爆表，暖
-            <i class="iconfont ic-show"></i>
+            <i :class="isActive?icShow:icHide" @click="toggle"></i>
           </div>
-          <div class="author-meta">
+          <div v-show="isActive" class="author-meta">
             写了126.1万字，获得了13.4万个喜欢
           </div>
           <div class="btn-group">
@@ -125,8 +125,18 @@
   name: 'HelloWorld',
   data () {
     return {
+      isActive:false,
+      icShow:'iconfont ic-show',
+      icHide:'iconfont ic-hide',
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  methods:{
+    toggle(){
+      let me = this;
+      me.isActive = !me.isActive;
+    }
+
   }
 }
 </script>
