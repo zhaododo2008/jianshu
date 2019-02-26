@@ -54,13 +54,9 @@
         </div>
         <hr>
         <ul class="flow-list-sort">
-          <li class="active">
-            最新发布
-          </li><li class="">
-          最新评论
-          </li><li class="">
-          热门
-        </li>
+          <li v-for="(item , index) in flowList" :key="index" @click="selectFlowList(index)" :class="flowListIndex == index ?'active':''" >
+             {{ item}}
+          </li>
         </ul>
         <div class="flow-list-container">
           <div class="split-line"></div>
@@ -128,13 +124,20 @@
       isActive:false,
       icShow:'iconfont ic-show',
       icHide:'iconfont ic-hide',
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      flowList:['最新发布','最新评论','热门'],
+      flowListIndex:0
+
     }
   },
   methods:{
     toggle(){
       let me = this;
       me.isActive = !me.isActive;
+    },
+    selectFlowList(index){
+      let me = this;
+      me.flowListIndex = index;
     }
 
   }
