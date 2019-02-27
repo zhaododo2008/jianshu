@@ -149,10 +149,11 @@
       let me = this;
       me.$http.ajax({
         url: userApi.comment.url,
-        method:'get',
+        method:userApi.comment.method,
         param: {},
         callback: res => {
-          console.log('res is ',res);
+          me.data = res;
+          console.log('res is ',me.data);
         },
         error() {
 

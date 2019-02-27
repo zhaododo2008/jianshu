@@ -25,12 +25,12 @@ export default {
             if (obj.resType && obj.resType == 'arraybuffer') {
                 obj.callback && obj.callback(res.data);
             } else {
-                if (res.data.code !== 1) {
-                    Message.warning(res.data.msg);
-                    obj.fail && obj.fail(res.data);
-                    return;
-                }
-                obj.callback && obj.callback(res.data.data);
+                // if (res.data.code !== 1) {
+                //     Message.warning(res.data.msg);
+                //     obj.fail && obj.fail(res.data);
+                //     return;
+                // }
+                obj.callback && obj.callback(res.data);
             }
         }).catch((error) => {
             obj.error && obj.error(error);
