@@ -13,7 +13,7 @@ export default {
         if (obj.baseURL) {
             axios.defaults.baseURL = '/' + obj.baseURL + '/';
         } else {
-            axios.defaults.baseURL = '/dr-web/';
+            axios.defaults.baseURL = '/api/';
         }
         obj.param = !obj.param ? {} : obj.param;
         axios({

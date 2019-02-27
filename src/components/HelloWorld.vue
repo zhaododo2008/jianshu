@@ -117,6 +117,8 @@
 </template>
 
 <script>
+  import userApi from "../api/userApi";
+
   export default {
   name: 'HelloWorld',
   data () {
@@ -146,8 +148,8 @@
       console.log('load message');
       let me = this;
       me.$http.ajax({
-        url: '/admin/users',
-        method:'post',
+        url: userApi.comment.url,
+        method:'get',
         param: {},
         callback: res => {
           console.log('res is ',res);

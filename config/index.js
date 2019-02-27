@@ -11,20 +11,12 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/dr-web/': { //http://dr.ihomefnt.com:8082/
-        target: 'https://dr.sit.ihomefnt.org/',
+      '/api/': {
+        target: 'https://www.jianshu.com',
         changeOrigin: true,
         pathRewrite: {
           "^/api": ""
         }
-      },
-      '/dr-notify/': {
-        target: 'http://192.168.1.247:11129/',
-        changeOrigin: true
-      },
-      '/dr-keeper/': {
-        target: 'http://127.0.0.1:11158/',
-        changeOrigin: true
       }
     },
 
